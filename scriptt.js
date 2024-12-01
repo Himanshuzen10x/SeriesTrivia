@@ -833,12 +833,11 @@ function shareOnTwitter() {
 }
 
 
-function shareOnFacebook() {
+ function shareOnFacebook() {
     const seriesName = selectedSeries.charAt(0).toUpperCase() + selectedSeries.slice(1).replace(/([A-Z])/g, ' $1'); // Format the series name
-    const scoreMessage = `Hi, I scored ${score}/10 in the ${seriesName} category quiz on SeriesTrivia ! Can you beat me?`;
-    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://learningyouth.com')}&quote=${encodeURIComponent(scoreMessage)}`;
+    const scoreMessage = `Hi, I scored ${score}/10 in the ${seriesName} category quiz on SeriesTrivia! Can you beat me?`;
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?quote=${encodeURIComponent(scoreMessage)}`;
     window.open(facebookUrl, '_blank');
-    
 }
 
 
